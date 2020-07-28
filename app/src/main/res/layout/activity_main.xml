@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+    </data>
+
+<!--<Button-->
+<!--    android:layout_width="200dp"-->
+<!--    android:layout_height="200dp"-->
+<!--    android:layout_gravity="center"-->
+<!--    android:foreground="?android:attr/selectableItemBackground"-->
+<!--    android:text="hello"-->
+<!--    android:background="@color/colorPrimary"-->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.MainActivity"
+            android:background="@color/mainBackground"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_33sdp"
+                android:layout_marginTop="@dimen/padding_all_all_large"
+                android:background="@drawable/rectangular_rounded_corners"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/padding_all_all_medium"
+                android:layout_marginLeft="@dimen/padding_all_all_medium"
+                android:layout_marginEnd="@dimen/padding_all_all_medium"
+                android:layout_marginRight="@dimen/padding_all_all_medium"
+                app:layout_constraintEnd_toStartOf="@+id/save_btn"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+
+                <ImageView
+                    android:id="@+id/search_icon_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_search_24" />
+
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Search" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/refre_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_all_all_large"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_refresh_24" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_53sdp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                 />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_33sdp"
+                android:text="Search"
+                android:textAllCaps="true"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/padding_all_all_large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="@dimen/padding_all_all_medium"
+                android:layout_marginRight="@dimen/padding_all_all_medium"
+                android:focusable="true"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/btn_ripple"
+                 />
+
+            <include layout="@layout/layout_network_error"
+                android:id="@+id/error"
+                />
+
+            <include layout="@layout/layout_progress"
+                android:id="@+id/progress_bar"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+</layout>

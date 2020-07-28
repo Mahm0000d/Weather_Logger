@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Weather Logger</string>
+    <string name="temprature_tv">Temprature :</string>
+    <string name="date_tv">Date :</string>
+    <string name="more_details_tv">More Details</string>
+    <string name="refresh_tv">Refresh</string>
+    <string name="delete_tv">Delete</string>
+    <string name="description_tv">Description :</string>
+
+    <string name="error_network_connection">Please check your Internet connection, then try again</string>
+    <string name="error_try_again">An error occurred. Please try again.</string>
+    <string name="btn_try_again">Try Again</string>
+    <string name="loading">Loading more&#8230;</string>
+    <string name="desc_loading">Loading</string>
+    <string name="pb_path">M 0,0 l 17,0 0,17 -17,0 0,-17
+                          M 20,0 l 17,0 0,17 -17,0 0,-17
+                          M 40,0 l 17,0 0,17 -17,0 0,-17
+                          M 40,20 l 17,0 0,17 -17,0 0,-17
+                          M 40,40 l 17,0 0,17 -17,0 0,-17
+                          M 20,40 l 17,0 0,17 -17,0 0,-17
+                          M 0,40 l 17,0 0,17 -17,0 0,-17
+                          M 0,20 l 17,0 0,17 -17,0 0,-17
+                           </string>
+
+    <string name="pb_square_1">M 0,0 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="pb_square_2">M 20,0 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="pb_square_3">M 40,0 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="pb_square_4">M 40,20 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="pb_square_5">M 40,40 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="pb_square_6">M 20,40 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="pb_square_7">M 0,40 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="pb_square_8">M 0,20 l 17,0 0,17 -17,0 0,-17</string>
+    <string name="city_name">Name : </string>
+</resources>

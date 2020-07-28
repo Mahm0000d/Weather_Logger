@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="height_home_header">@dimen/_128sdp</dimen>
+    <dimen name="height_bottom_bar">@dimen/_65sdp</dimen>
+    <dimen name="fontSize_all_all_small">@dimen/_9ssp</dimen>10sp
+    <dimen name="fontSize_all_all_large">@dimen/_13ssp</dimen>16sp
+    16sp
+    <dimen name="fontSize_all_all_medium">@dimen/_10ssp</dimen>12sp
+
+    <dimen name="width_search_recyclerItem_grid">@dimen/_125sdp</dimen>
+    <dimen name="height_search_recyclerItem_grid_img">@dimen/_105sdp</dimen>
+    86dp
+    <dimen name="height_search_recyclerItem_grid_infoContainer">@dimen/_38sdp</dimen>
+
+    <dimen name="padding_all_all_small">@dimen/_5sdp</dimen>
+    6dp
+
+    <dimen name="dimen_main_squareCardView">@dimen/_80sdp</dimen>
+    96dp
+    <dimen name="radius_all_squareCardView_and_border_filter_edit_text_and_margin_radio_numbers1">
+        @dimen/_4sdp
+    </dimen>
+    <dimen name="size_main_circleCardView">@dimen/_60sdp</dimen>
+    72dp
+    <dimen name="radius_main_circleCardView">@dimen/_30sdp</dimen>
+    36dp
+
+    <dimen name="height_search_recyclerItem_list">@dimen/_62sdp</dimen>
+    73dp
+
+    <dimen name="shadowSize_all_all_small_and_someWidth">@dimen/_5sdp</dimen>
+    2dp
+    <dimen name="shadowSize_all_all_medium">@dimen/_4sdp</dimen>
+    2dp
+
+    <dimen name="padding_all_all_large">@dimen/_20sdp</dimen>
+    24dp
+    <dimen name="padding_all_all_medium">@dimen/_10sdp</dimen>
+    12dp
+    <dimen name="padding_all_all_8dp">@dimen/_6sdp</dimen>
+    <dimen name="bottom_sheet_padding">@dimen/_17sdp</dimen>
+    <dimen name="app_bar_height">@dimen/_180sdp</dimen>
+    <dimen name="message_text_size">@dimen/_22ssp</dimen>
+    <dimen name="loader_size">@dimen/_70sdp</dimen>
+    <dimen name="button_text_size">@dimen/_17ssp</dimen>
+    <dimen name="text_size">@dimen/_19ssp</dimen>
+
+
+</resources>

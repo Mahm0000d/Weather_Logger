@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <data>
+
+  </data>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/bottom_sheet_layout"
+      android:background="@android:color/black"
+      android:paddingTop="@dimen/padding_all_all_medium"
+      android:paddingBottom="@dimen/padding_all_all_medium"
+      android:orientation="vertical"
+      app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+      app:behavior_hideable="true"
+      app:behavior_peekHeight="?android:attr/actionBarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_49sdp"
+        android:layout_marginTop="@dimen/padding_all_all_small"
+        android:gravity="center_vertical"
+        style="@style/AppTheme.layout"
+        android:id="@+id/refresh_layout">
+
+      <TextView
+          android:id="@+id/refresh"
+          style="@style/search_recycler_listItem_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:ellipsize="end"
+          android:fontFamily="sans-serif"
+          android:singleLine="true"
+          android:text="@string/refresh_tv"
+          android:textColor="@android:color/white"
+          android:layout_gravity="center_vertical"
+          android:layout_marginStart="@dimen/padding_all_all_medium"
+          android:layout_marginLeft="@dimen/padding_all_all_medium"
+        />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="@dimen/padding_all_all_medium"
+          android:layout_marginRight="@dimen/padding_all_all_medium"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          app:srcCompat="@drawable/ic_baseline_refresh_24" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_49sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refresh_layout"
+        android:layout_marginTop="@dimen/padding_all_all_small"
+        style="@style/AppTheme.layout"
+        android:gravity="center_vertical"
+
+        android:id="@+id/delete_layout">
+
+      <TextView
+          android:id="@+id/delete"
+          style="@style/search_recycler_listItem_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="@dimen/padding_all_all_medium"
+          android:layout_marginLeft="@dimen/padding_all_all_medium"
+          android:layout_marginEnd="@dimen/padding_all_all_medium"
+          android:layout_marginRight="@dimen/padding_all_all_medium"
+          android:layout_marginBottom="@dimen/padding_all_all_medium"
+          android:ellipsize="end"
+          android:fontFamily="sans-serif"
+          android:singleLine="true"
+          android:text="@string/delete_tv"
+          android:textColor="@android:color/white" />
+
+      <ImageView
+          android:id="@+id/delete_iv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+          android:layout_alignParentRight="true"
+          android:layout_marginEnd="@dimen/padding_all_all_medium"
+          android:layout_marginRight="@dimen/padding_all_all_medium"
+          app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    </RelativeLayout>
+
+
+
+  </LinearLayout>
+</layout>

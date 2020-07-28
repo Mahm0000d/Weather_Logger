@@ -1,0 +1,68 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="search_recycler_listItem" parent="main_cardView_square">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/height_search_recyclerItem_list</item>
+        <item name="android:layout_marginBottom">@dimen/padding_all_all_small</item>
+    </style>
+    <style name="search_recycler_listItem_name" parent="recycler_Item_info">
+        <item name="android:textSize">@dimen/fontSize_all_all_large</item>
+
+    </style>
+
+    <style name="AppTheme.Button" parent="Theme.AppCompat">
+        <item name="android:layout_width">140dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+    </style>
+
+    <style name="AppTheme.layout" parent="Theme.AppCompat">
+        <item name="android:background">@drawable/ripple</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    <style name="recycler_Item_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/fontSize_all_all_small</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="main_cardView_square" parent="main_cardView_circle">
+        <item name="android:layout_width">@dimen/dimen_main_squareCardView</item>
+        <item name="android:layout_height">@dimen/dimen_main_squareCardView</item>
+        <item name="cardElevation">@dimen/shadowSize_all_all_small_and_someWidth</item>
+        <item name="cardMaxElevation">@dimen/shadowSize_all_all_small_and_someWidth</item>
+        <item name="cardCornerRadius">
+            @dimen/radius_all_squareCardView_and_border_filter_edit_text_and_margin_radio_numbers1
+        </item>
+        <item name="android:layout_marginBottom">@dimen/padding_all_all_medium</item>
+    </style>
+    <style name="main_cardView_circle" parent="CardView">
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="android:layout_width">@dimen/size_main_circleCardView</item>
+        <item name="android:layout_height">@dimen/size_main_circleCardView</item>
+        <item name="contentPaddingBottom">0dp</item>
+        <item name="cardElevation">@dimen/shadowSize_all_all_small_and_someWidth</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="cardCornerRadius">
+            @dimen/radius_main_circleCardView
+        </item>
+    </style>
+
+</resources>
